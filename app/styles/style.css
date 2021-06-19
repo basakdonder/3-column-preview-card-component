@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  color: #f2f2f2;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.card_container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card_container .card {
+  width: 1000px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card_container .card .columns_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card_container .card .columns_wrapper .sedan_column {
+  background-color: #e38826;
+}
+
+.card_container .card .columns_wrapper .sedan_column .button {
+  color: #e38826;
+}
+
+.card_container .card .columns_wrapper .suv_column {
+  background-color: #006970;
+}
+
+.card_container .card .columns_wrapper .suv_column .button {
+  color: #006970;
+}
+
+.card_container .card .columns_wrapper .luxury_column {
+  background-color: #004241;
+}
+
+.card_container .card .columns_wrapper .luxury_column .button {
+  color: #004241;
+}
+
+.card_container .card .columns_wrapper_items {
+  padding: 50px;
+  width: 33%;
+}
+
+.card_container .card .columns_wrapper_items h1 {
+  margin: 30px 0;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.card_container .card .columns_wrapper_items p {
+  margin-bottom: 70px;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card_container .card .columns_wrapper_items .button {
+  background-color: #f2f2f2;
+  width: 120px;
+  padding: 15px;
+  border-radius: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card_container .card .columns_wrapper_items .button:hover {
+  background: none;
+  padding: 13px;
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 768px) {
+  .card_container {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card_container .card {
+    width: 375px;
+    min-width: 320px;
+  }
+  .card_container .card .columns_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card_container .card .columns_wrapper_items {
+    width: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
